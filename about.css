@@ -1,0 +1,134 @@
+Body {background-image: url('images/background-image.png');
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    Text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
+   background-color: #b22222; /* Red color */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1.5rem;
+            background-image: url('backgroundhead1.jpg');
+            background-size: cover;  /* Ensures the image covers the entire screen */
+            background-position: center center;  /* Centers the image */
+            background-repeat: no-repeat;  /* Prevents image from repeating */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #8B0000; /* Red */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar li {
+    margin: 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #8b0000; /* Dark red */
+    color: #fff0f0; /* Light tint of white */
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #B22222; /* Red */
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9dcdc; /* Light red tint */
+}
+
+tr:hover {
+    background-color: #fff0f0; /* Light red hover */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #8B0000; /* Dark red */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}

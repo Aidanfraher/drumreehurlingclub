@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Drumree Hurling and Camogie Club! Discover our team spirit, achievements, gallery, upcoming events, and how to get involved in Meath's premier GAA club.">
+    <meta name="keywords" content="Drumree Hurling Club, Camogie Club, GAA Meath, Hurling in Meath, Club Fundraisers, Drumree Gallery">
+ 
+    <title>Drumree Hurling and Camogie Club | Home of Hurling in Meath</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header class="header">
+<center><img src="drumreelogo.png" width="200" height="200">
+        <h1>Drumree Hurling and Camogie club</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pitchlocator.html">Pitch Locator</a></li>
+            <li><a href="https://www.oneills.com/shop-by-team/gaa/ireland/drumree-gaa.html">Club Shop</a></a></li>
+
+        </ul>
+    </nav>
+
+<br>
+
+   <div class="block-heading"> 
+        <h2>Our past year in Photos</h2>
+        <p>Look back on a very successful 2023 season in photos through our club gallery</p>
+  </div>
+<section id="gallery" class="gallery-section">
+        <h2>2023 Gallery</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="teampic1.jpg" alt="Team photo">
+                <img src="teampic2.jpg" alt="Match Action">
+                <img src="gallery1.jpg" alt="Game v Kildakey">
+                <img src="teampic3.jpg" alt="Ladies Team">
+                <img src="gallery7.jpg" alt="Game v Kells">
+            </div>
+            <button onclick="nextSlide()">Prev</button>
+            <button onclick="prevSlide()">Next</button>
+        </div>
+    </section>
+<br>
+
+<div class="block-heading">
+        <h2>Strictly Come Dancing</h2>
+        <p>Check out video footage of our recent club fundraiser in collaboration with Dunshaughlin GAA "Strictly come dancing" night</p>
+</div>
+    <br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Fol0WQ2u4FQ?si=34GWhs7qqNniQ9UZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+    <footer class="footer">
+        <p>&copy; 2024 [Drumree Hurling Club]. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Initial display
+        showSlide(currentSlide);
+    </script src="slider.js"></script>
+</html>
+

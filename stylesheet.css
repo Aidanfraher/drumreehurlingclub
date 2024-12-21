@@ -1,0 +1,185 @@
+Body {background-image: url('images/background-image.png');
+}
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+/* Header styling */
+.header {
+    background-color: #b22222; /* Red color */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1.5rem;
+            background-image: url('backgroundhead1.jpg');
+            background-size: cover;  /* Ensures the image covers the entire screen */
+            background-position: center center;  /* Centers the image */
+            background-repeat: no-repeat;  /* Prevents image from repeating */
+}
+/* Navigation bar */
+.navbar {
+    background-color: #8B0000; /* Dark red */
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight:;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #b22222; /* Lighter red on hover */
+}
+
+.block-heading {text-align: center;
+Background-color: #800000;
+Color: white;
+Padding: 15px 30px;
+Font-size: 1.0rem;
+Font-weight:;
+Border-radius:8px;
+}
+.hero {
+     Text-align: center;
+}
+}
+
+ 
+}
+
+/* About section */
+.about-section {
+    padding: 2rem;
+    background-color: #f8f8f8; /* Light gray for contrast */
+    text-align: center;
+ 
+}
+/* Gallery section */
+.gallery-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-section .slides {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gallery-section .slides img {
+    width: 600px; /* Fixed width for all images */
+    height: 400px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the images fill the space without distortion */
+    border-radius: 5px;
+    margin-bottom: 1rem; /* Adds space between images */
+}
+
+
+@media (max-width: 768px) {
+    .gallery-section .slides img {
+        width: 100%; /* Makes images responsive */
+        height: auto; /* Height will adjust automatically based on width */
+    }
+
+
+
+
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #fff; /* White background */
+    padding: 2rem;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-bottom: 0.5rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #b22222; /* Red border */
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #b22222; /* Red background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #8b0000; /* Darker red */
+}
+.Pitchlocator-section {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding around the content */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Optional: Limits the width of the section */
+    margin: 20px auto; /* Center the section horizontally with margin */
+}
+
+.Pitchlocator-section h2 {
+    font-size: 24px; /* Adjust heading size */
+    margin-bottom: 10px; /* Space below heading */
+    color: #333; /* Darker text color for better readability */
+    text-align: center;
+}
+
+.Pitchlocator-section p {
+    font-size: 16px; /* Adjust paragraph font size */
+    color: #555; /* Softer text color */
+    line-height: 1.6; /* Improve readability with line spacing */
+    text-align: center;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #8b0000; /* Dark red */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+}
